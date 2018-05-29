@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block home %}
+<h1>Hello World</h1>
+<p>This is a {{html_var}} page</p>
+<p>This is a randomly generated number: {{num}}</p>
+<p>This  is a non-sent context item {{hello}}</p>
+{% if hai%}
+    <p>Hai  is true:Yippe</p>
+{% endif %}
+{% for item in sample_list %}
+    <ul>
+        <li>{{item}}</li>
+    </ul>
+{% endfor %}
+
+{% endblock home %}

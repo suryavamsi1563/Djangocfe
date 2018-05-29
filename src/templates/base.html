@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    {% include 'snippets/css.html' %}
+</head>
+<body>
+<nav></nav>
+{% include 'snippets/nav.html' %}
+<div class="container">
+    <br>
+    {% block home %}
+    {% endblock home %}
+
+    {% block home2 %}
+    {% endblock home2 %}
+
+    {% block home3 %}
+    {% endblock home3 %}
+
+    {% block contact_us %}
+    {% endblock contact_us %}
+</div>
+{% include 'snippets/js.html' %}
+</body>
+</html>
